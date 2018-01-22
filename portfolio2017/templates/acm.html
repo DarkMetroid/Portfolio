@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/caseStudy.css' %}" type="text/css" media="screen"> 
+    
+{% endblock stylesheets %}
+
+
+{% block bodyBlock %}
+<div class="container">
+    <div class="massuniSectionTop row">
+        <div class="col-md-12">
+            
+            <img class="topAcmGif img-responsive" src="{% static 'img/orderForm.gif' %}">
+        </div>
+    </div>
+    <div class="row acmPadding">
+        <div class="col-md-12">
+            <p class="csCopy">ACM Printing &amp; Distribution was looking to bring online order forms to one of their corporate clients. The client was a retailer with around 600 stores in Canada that wanted a system through which staff could easily order products for their customers. Previously orders had been coming in via. email, phone, and in many cases even an old fax form, so needless to say there was significant room for improvement.</p><br/>
+            <p class="csCopy">I worked as the sole developer on this project setting up all aspects of the system, and dealing with the client directly.</p><br/>
+            <p class="csCopy">Three fundamental goals for this project were:</p>
+            <ul class="acmList">
+                <li> <b>1. Simple.</b> Many of the users were older store staff, and weren't particularly tech savvy. I needed to ensure there'd be minimal room for error throughout the process.</li>
+                <li> <b>2. Fast.</b> A few of the retail locations were rather remote, and stable internet wasn't a guarantee. Minimizing data transfer and page loads was a priority.</li>
+                <li> <b>3. Engaging.</b> Some of the userbase was familiar with using a corporate portal developed over a decade ago. I wanted to find subtle ways to make the site seem a bit more robust and polished than what they were used to.</li>
+            </ul>
+            
+            </div>
+    </div>
+</div>
+<div class="finishSection">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-5">
+                <h3 class="csSubheading2White">Instructions not Included</h3>
+            </div>
+            <div class="col-md-7">
+            </div>
+        </div>
+        <div class="row">  
+            <div class="col-md-5">        
+                <p class="csCopyWhite">In order to keep things as simple as possible we designed all pages so that there was only one path forward, and managed to ensure there was generally only one type of input being entered on each page.</p> </br>
+
+                <p class="csCopyWhite">We also removed complexity by using auto-complete features, and predictive sorting on the products we offered. Through pattern recognition it was fairly easy to determine where the products would be sent, and what would likely be ordered. Using this information to auto-populate and sort forms helped to significantly cut down the time it took for our users to place an order.</p>
+            </div>
+            <div class="col-md-7 content">
+                        <img class="align-middle embedImgGrey imgMargins" src="{% static 'img/autoComplete.gif' %}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container massuniSection">
+    <div class="row ">
+        <div class="col-md-7">
+            <img class="embedImgGrey imgMargins" src="{% static 'img/acmDash.png' %}">
+
+        </div>
+        
+        <div class="col-md-5">
+            <h3 class="csSubheading2">Ajax + React</h3>
+            <p class="csCopy">To keep things lightweight I ensured each order form could be completed from start-to-end on a single page load. All communication with the servers happened through Ajax requests, and state changes on the page through React allowing us to avoid any redundancy, and keep things lightening fast. Some of the client's retail locations didn't have the best internet (particularly in northern Canada), so minimizing data-transfer proved helpful.</p>
+        </div>
+    </div>
+</div>
+
+<div class="finishSection">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <h3 class="csSubheading2White">Designing to Delight</h3>
+                <p class="csCopyWhite">One of the subtle things I tried to do with the interface was to find ways to make things look and feel polished without adding anything too bold or distracting to the pages. Adding animation seemed like the obvious solution since it could serve to grab the user's attention after a state/data change. Given how often these forms would be used, though, we wanted to ensure animations were kept subtle and quick enough to avoid them ever becoming obnoxious.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container delightImgs">
+        <div class="row ">    
+            <div class="col-md-4">
+                <img class="embedImgGreyDelight successGif imgMargins" src="{% static 'img/success.gif' %}">
+
+            </div>
+            <div class="col-md-4">
+                <img class="embedImgGreyDelight successGif imgMargins" src="{% static 'img/topDashboard.gif' %}">
+
+            </div>
+            <div class="col-md-4">
+                <img class="embedImgGreyDelight successGif imgMargins" src="{% static 'img/submit.gif' %}">
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock bodyBlock %}
+
+{% block postScripts %}
+{% endblock postScripts %}
+
+

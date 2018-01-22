@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/animateLinks/component.css' %}" type="text/css" media="screen">
+    
+{% endblock stylesheets %}
+
+{% block bodyBlock %}
+<div class="blackSplash">
+    <img class="circleImg " src="{% static 'img/me3.png' %}">
+    <div class="imgCircle"></div>
+</div>
+<div class="slant-bottom">
+    <div class="container">
+        <div class="row csBlock">
+            <div class="col-md-7">
+                <h2 class="projectNumber">01</h2>
+                <div class="headingText">
+                    <h2 class="projectName">Massuni</h2>
+                    <p class="projectDesc">Custom Furniture</p>
+                </div>
+                <p class="descCopy"> Massuni was a project that aimed to change the way people order furniture. Users would select a piece of furniture they like, and then transform everything from the material, stain, size, and functionality of the piece to suit their unique space. They'd be able to view a 3D rendering of the furniture throughout the design process.</p>
+                <p class="descCopy">
+                <b>Technology Used:</b> Python, Django, Cython, Angular, RabbitMQ, Redis, Django Celery, WebGL, Postgresql, SASS, jQuery/Javascript, RQueue, Reality Server
+                </p>
+                
+			<section class="color-3">
+				<nav class="cl-effect-12">
+                    <a href="{% url 'massuni' %}" data-hover="View Case Study">View Case Study</a>
+                </nav>
+            </section>
+                
+            </div>
+            <div class="col-md-5" style="position: relative;">
+                <img class="homeImgMargins" src="{% static 'img/massuni.png' %}">
+                
+            </div>            
+        </div>
+         <div class="row csBlock" style="">
+            <div class="col-md-5 hidden-sm hidden-xs">
+                <img class="homeImgMargins" src="{% static 'img/acm.png' %}">
+                
+            </div>            
+             
+            <div class="col-md-7">
+                <h2 class="projectNumber">02</h2>
+                <div class="headingText">
+                    <h2 class="projectName">ACM</h2>
+                    <p class="projectDesc">Order Forms</p>
+                </div>
+                <p class="descCopy"> ACM was seeking a way to simplify product orders for a corporate client with over 600 retail stores in Canada. Previously stores had placed orders either through email, phone call, or even using a fax order form. To modernize things the goal was to move the process online by developing simple and easy-to-use web forms.</p>
+                <p class="descCopy">
+                <b>Technology Used:</b> Python, Django, ReactJS, Postgresql, SASS, jQuery/Javascript 
+                </p>
+
+			<section class="color-3">
+				<nav class="cl-effect-12">
+                    <a href="{% url 'acm' %}" data-hover="View Case Study">View Case Study</a>
+                </nav>
+            </section>
+            </div>
+            <div class="col-md-5 visible-sm visible-xs">
+                <img class="homeImgMargins" src="{% static 'img/acm.png' %}">
+                
+            </div>            
+
+        </div>
+        <div class="row csBlock">
+            <div class="col-md-7">
+                <h2 class="projectNumber">03</h2>
+                <div class="headingText">
+                    <h2 class="projectName">Burger<br/> Bass</h2>
+                </div>
+                <p class="descCopy"> This was a fun one-off project I did several years ago for a hip-hop based burger restaurant (weird, right?).</p>
+                <p class="descCopy">
+                <b>Technology Used:</b> HTML5, SASS, jQuery/Javascript 
+                </p>
+
+                
+			<section class="color-3">
+				<nav class="cl-effect-12">
+                    <a href="http://quiet-lake-4412.herokuapp.com" data-hover="View Website">View Website</a>
+                </nav>
+            </section>
+                
+            </div>
+            <div class="col-md-5" style="position: relative;">
+                <img class="homeImgMargins" src="{% static 'img/burger.png' %}">
+                
+            </div>            
+        </div>
+
+    </div>
+</div>
+
+<div class="contactSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <p class="contactHeading">Get In Touch</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="contactIcon" src="{% static 'img/emailFooterIcon.png' %}" alt="" />
+                <p class="contactText">justin@acmprint.ca</p>
+            </div>
+            <div class="col-md-4">
+                <a class="contactLink" href="{% static 'img/Resume2017.pdf' %}">
+                    <img class="contactIcon" src="{% static 'img/resume.png' %}" alt="" />
+                    <p class="contactText">View Resume</p>
+                </a>
+
+            </div>
+            
+            <div class="col-md-4">
+                <img class="contactIcon" src="{% static 'img/phoneFooterImg.png' %}" alt="" />
+                <p class="contactText">(647) 970-5932</p>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock bodyBlock %}

@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/caseStudy.css' %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/coverflow.css' %}" type="text/css" media="screen">
+    
+    
+{% endblock stylesheets %}
+
+{% block bodyBlock %}
+<div class="container">
+    <div class="massuniSectionTop row">
+        <div class="col-md-12">
+            
+            <img class="topMassuniGif img-responsive" src="{% static 'img/photoshopHome.gif' %}">
+        </div>
+    </div>
+    <div class="row topMassuniPadding">
+        <div class="col-md-12">
+        </div>
+        <div class="col-md-6">
+        
+
+            <p class="csCopy">Massuni was a project that aimed to bring custom furniture to the masses by letting them completely transform pieces to suit their needs. The easiest way to get a handle on what the process looks like would be to see it in action by watching the demo video.</p> 
+            <p class="csCopy">I started off on the project as a developer largely working on routing out Flash bugs, developing the ecommerce features on the site, and modifying the customization interface. As time went on I took on the role of Project Lead and spearheaded a revamp of site's catalogue, generating CNC machine code (from our furniture models), and creating a WebGL replacement to the original Flash code.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div style="text-align:center" class="hidden-xs"> 
+                <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/199496326?byline=0&portrait=0" width="480" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+
+            <div style="text-align:center" class="visible-xs"> 
+                <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/199496326?byline=0&portrait=0" width="270" height="165" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="finishSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <h3 class="csSubheadingWhite">Building Trust</h3>
+                    
+                    <p class="csCopyWhite">Buying furniture online isn't exactly commonplace nowadays, and when you venture into the world of custom furniture it seems even more nebulous a proposal. To help mitigate the resistance to this it was apparent to us that we'd need to take special care to gain the trust of our customers.
+                    </p> 
+            </div>    
+        </div>
+        <div class="row subSection">
+                        
+            <div class="col-md-5">
+                <h4 class="sectionTitle">Finish Samples</h4>
+                <p class="csCopyWhite">One method we used was offering people samples of what our stains/finishes looked like. Given each computer screen's brightness/settings can influence the appearance of our stains, we created an order form through which customers could request free samples.</p>
+                
+            </div>
+            <div class="col-md-7">
+                <img class="webBrowser img-responsive imgMargins" src="{% static 'img/finishsample2.gif' %}">
+            </div>
+
+        </div>
+        
+        <div class="row subSection">
+            <div class="col-md-7">
+                <img class="embedImgGrey imgMargins" src="{% static 'img/factory.png' %}">
+            </div>
+                        
+            <div class="col-md-5">
+                <h4 class="sectionTitle">Transparency &amp; Guarantees</h4>
+                <p class="csCopyWhite">Throughout the site we explained how our factory functioned, how our prices were generated, and the environmental impact of our manufacturing processes. Our philosophy was that being as transparent as possible would help gain the confidence of our customers. We also produced <a class="vidLink" href="https://vimeo.com/199491751">video content</a> to help put a face and voice to our team.</p>
+                <p class="csCopyWhite">Finally, we offered a money-back guarantee on all of our products to help alleviate the fear of making such a large purchase online.</p>
+                
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+    <div class="container ">
+        <div class="massuniSection row">
+            <div class="col-md-12">
+                <h2 class="csSubheading">Reinventing the Catalogue</h2>
+            </div>
+            <div class="col-md-12">
+                <p class="csCopy">While Massuni's customization engine allows users to create virtually anything they can imagine, one of the things we noticed very quickly was giving users a blank canvas to start with proved very intimidating.</p><br/>
+                <p class="csCopy">Staging a house before selling it works because it helps the potential buyer visualize themself in the space. For much the same reason, we decided to provide users with a wide range of items they could refine to suit their needs.</p><br/>
+                <p class="csCopy">Given how many ecommerce sites you find on the web you'd think the idea of putting together a product catalogue would be fairly well defined. We were in the unique position, however, of creating a catalogue built around browsing for a starting point (not shopping for a final product). Accordingly we saw an opportunity to explore the ramifications this shift could have on user behaviour.</p>
+            </div>        
+        </div>
+    </div>
+    
+<div class="container hidden-xs">
+<div>
+	<div id="coverflow" >
+        <img class="coverflowImg" src="{% static 'img/catalogue1.png' %}" alt=""  /> 
+        <img class="coverflowImg" src="{% static 'img/catalogue2.png' %}" alt="" /> 
+        <img class="coverflowImg" src="{% static 'img/catalogue3.png' %}" alt=""  />
+        <img class="coverflowImg" src="{% static 'img/catalogue4.png' %}" alt="" />
+        <img class="coverflowImg" src="{% static 'img/catalogue5.png' %}" alt=""  />
+        
+	</div>
+</div>
+<div id="coverflow-slider"></div>
+</div>
+<div class="visible-xs container">
+    <img class="coverflowImg img-responsive" src="{% static 'img/catalogue2.png' %}" alt="" /> 
+
+</div>
+    
+    <div class="container catFeaturesSection">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+            <div class="col-md-12">
+                <p class="csCopy">Key features of the design included:</p>
+            <ul class="acmList">
+                <li> <b>1. Masonry Layout.</b> Similar to Pinterest we adopted the format of using different sized tiles to display our products. Generally traditional catalogues tend to keep things sequential, as research shows users like to make sure they've seen all available options before purchasing (especially for larger purchases). Massuni, however, had a massive catalogue (which would only grow), and allowed for everything to be completely customized. As a result, we wanted to encourage
+                users to browse (a la Pinterest), rather than carefully examine each product. The nitpicking/refining could happen during the customization stage.</li>
+                <li> <b>2. Images.</b> Each product was shown head on, as it would look from the height of the average person. On hover a perspective shot would be seen. We also kept everything proportional (smaller products were the correct size in relation to larger products). Our goal was to mimic how the product would traditionally be viewed. Once using our customization engine users could generate renderings of the products from any angle.</li>
+                <li> <b>3. Filters.</b> Given the size of the catalogue, filters were a huge part of our strategy to help customers find what they were looking for. Many of the links to the catalogue itself would open the page with a filter already set, and the filter bar open to encourage use. We also ensured it was sticky when scrolling down so it'd always be accessible. In designing the bar itself we used large images to convey what each option did. Our data also showed some
+                shoppers took a utilitarin approach (they'd be say only looking for a 140cm x 80cm armoire), while others took a more stylistic aproach (they'd be looking for any product with a modern design). To service both groups we offered both a <i>'Shop By Product'</i> and <i>'Shop By Decor'</i> option in the filter bar.</li>
+                <li> <b>4. Clean.</b> Essentially all the user sees scrolling the page are the products themselves, and a name (to help them remember what they liked). It isn't untill clicking the product, or the <i>'Quick Look'</i> button (displayed on hover) that more information on size/price/materials appears. This was done to help encourage speed during the browsing process. We felt the more relevant items the user could see the more likely they were to find something that met their needs.</li>
+
+            </ul>
+
+            </div>
+        </div>
+    </div>
+
+<div class="finishSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="csSubheading2White">WebGL</h3>
+                
+                    <p class="csCopyWhite">To generate our furniture models we first started by creating meshes for various parts in Blender. To handle resizing we developed a system through which each mesh would be tagged with scale rules (which defined what dimension different parts of the mesh should/could scale in), and meta-information (e.g. what direction the wood grain should run).</p>   
+                     <p class="csCopyWhite">From there we assembled our meshes according to predefined construction rules, and created a low-poly WebGL model. On-request we also generated high-fidelity, textured renderings. Pictured is a final high-fidelity rendering generated using Cherry wood, and a clearcoat finish.
+                     
+                     </p> 
+            </div>    
+            <div class="col-md-6">
+<img class="furnitureWebGL" src="{% static 'img/masonryP.png' %}" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+    
+        
+{% endblock bodyBlock %}
+
+{% block postScripts %}
+
+    <script src="{% static 'js/coverflow.js' %}"></script>
+    <script type="text/javascript">
+$( document ).ready(function() {
+$("img").one("load", function() {
+        $(function() {
+            $('#coverflow').coverflow({
+                active: 2,
+                trigger: {
+                    mousewheel : false
+                }
+            });
+            
+            $('#coverflow img').click(function() {
+                if( ! $(this).hasClass('ui-state-active')){
+                    return;
+                }
+                $('#coverflow').coverflow('next');
+            });
+        });
+
+}).each(function() {
+  if(this.complete) $(this).load();
+});
+        
+});
+    </script>
+    
+{% endblock postScripts %}
+

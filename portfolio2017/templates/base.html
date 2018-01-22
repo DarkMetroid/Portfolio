@@ -1,0 +1,85 @@
+{% load static from staticfiles %}
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<meta name="apple-mobile-web-app-capable" content="width=device-width, initial-scale = 1.0, user-scalable = no" />
+	<meta name="description" content="The portfolio of Justin Singh, a designer/programmer based in Toronto, Canada.">
+	<meta name="keywords" content="Justin Singh, website, web developer, programmer, freelancer, front-end developer, designer, Justin, Toronto, Canada">
+	<meta name="author" content="Justin Singh">
+
+	<title>Justin Singh</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+    {% block stylesheets %}
+    
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/grid.css' %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/perspectivePage/component.css' %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/perspectivePage/demo.css' %}" type="text/css" media="screen">
+
+    {% endblock stylesheets %}
+    
+    <link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+    <script src="{% static 'js/modernizr.custom.25376.js' %}"></script>
+    
+</head>
+
+<body>
+<div id="perspective" class="perspective effect-rotateleft">
+    <div class="perspContainer">
+        <div class="wrapper">
+            <div class="blackSplashHeader">
+    <div class="showMenuWrapper">
+        <button id="showMenu">Menu</button>
+    </div>
+    <div class="splashTextBlock">
+        <a class="topLink" href="{% url 'home' %}">
+            <h1 class="handwrittenHeading">Justin Singh</h1>
+            <h2 class="imgSubheading">Software Developer</h2>
+        </a>
+        {% block subtitle %} {% endblock subtitle %}
+    </div>
+</div>
+            
+            {% block bodyBlock %}
+
+            {% endblock bodyBlock %}
+
+        </div><!-- wrapper -->
+    </div><!-- /perspContainer -->
+
+    
+    <nav class="outer-nav right vertical">
+        <span class="hidden-xs">
+            <a href="{% url 'home' %}" class="icon-home">Home</a>
+            <a href="{% url 'massuni' %}" class="icon-news">Massuni Case Study</a>
+            <a href="{% url 'acm' %}" class="icon-news">ACM Case Study</a>
+            <a href="{% static 'img/resume2017.pdf' %}" class="icon-star">Resume</a>
+        </span>
+        <span class="visible-xs">
+            <a href="{% url 'home' %}" class="icon-home">Home</a>
+            <a href="{% url 'massuni' %}" class="icon-news">Massuni</a>
+            <a href="{% url 'acm' %}" class="icon-news">ACM</a>
+            <a href="{% static 'img/Resume2017.pdf' %}" class="icon-star">Resume</a>
+        </span>
+        
+        {% comment %}
+        <a href="#" class="icon-star">Favorites</a>
+        <a href="#" class="icon-mail">Messages</a>
+        <a href="#" class="icon-lock">Security</a>
+        {% endcomment %}
+    </nav>
+</div><!-- /perspective -->
+    <script type="text/javascript" src="{% static '/js/jquery-1.9.1.js' %}"></script>
+    <script src="{% static 'js/classie.js' %}"></script>
+    <script src="{% static 'js/menu.js' %}"></script>
+    {% block postScripts %}
+    {% endblock postScripts %}
+</body>
+</html>

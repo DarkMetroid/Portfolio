@@ -1,0 +1,249 @@
+.topHeading{
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #000;
+    line-height: 51px;
+    font-size: 105px;
+    text-transform: uppercase;
+}
+
+.topMassuniGif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+}
+
+.topAcmGif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.delightImgs{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.successGif{
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.topMassuniPadding{
+    margin-bottom: 75px;
+}
+
+.acmPadding{
+    margin-bottom: 75px;
+}
+
+.csCopy{
+    color: #000;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.csCopyWhite{
+    color: #FFF;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+    
+.csSubheading{
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.csSubheading2{
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.csSubheading2White{
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+
+.csSubheadingWhite{
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+
+.csTopheading{
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.embedImg{
+    padding: 10px;
+    background: #fff;
+}
+
+.selectImg{
+    margin-top: 30px;
+}
+
+.embedImgGrey{
+    padding: 10px;
+    background: #dedede;
+}
+
+.embedImgGreyDelight{
+    padding: 12px;
+    background: #dedede;
+}
+
+.catalogueImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #dedede;
+}
+
+
+
+
+.vimeoEmbed{
+    display: block;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.catFeaturesSection{
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+.massuniSection{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.massuniSectionTop{
+    margin-top: 40px;
+    margin-bottom: 75px;
+}
+
+.catSection{
+    background: #000;
+}
+
+.finishSection{
+    background: #000;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.subSection{
+    margin-top: 75px;
+}
+
+/* Carousel */
+
+.ui-coverflow-wrapper{
+    height:575px;
+}
+.ui-state-active{
+    border: solid 1px #000;
+}
+
+.coverflowImg{
+    border: solid 1px #000 !important;
+}
+
+
+.sectionTitle{
+    z-index: 10;    
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-family: 'OpenSans';
+    font-weight: 100;
+    color: #FFF;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.webBrowser{
+    display: block;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.factoryVidWrapper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.acmList li{
+    color: #000;
+    line-height: 1.5em;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vidLink{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.vidLink:hover{
+    color: #FFF; 
+}
